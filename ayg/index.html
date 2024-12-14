@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="style_panel.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="imagenes/logo.jpg" alt="logo de la marca" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="panel_usuario.html">Inicio</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><button id="open-cart-btn">Carrito</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="presentacion">
+      <h1>Bienvenidos a AG Micheladas</h1>
+      <p>
+        Descubre nuestras deliciosas michelas, jugos, sandwiches y pinchos
+        unicos
+      </p>
+    </div>
+
+    <div class="container">
+      <p>Micheladas</p>
+      <div class="Productos">
+        <div class="card">
+          <img src="imagenes/frutos verde.jpg" alt="futos verde" />
+          <div class="card-body">
+            <h2 class="card-title">Frutos verde</h2>
+            <p class="card-text">8000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/maracumango.jpg" alt="maracumango" />
+          <div class="card-body">
+            <h2 class="card-title">maracumangos</h2>
+            <p class="card-text">8000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="imagenes/mexicana.jpg" alt="mexicana" />
+          <div class="card-body">
+            <h2 class="card-title">mexicana</h2>
+            <p class="card-text">8000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/roja.jpg" alt="fruto rojos" />
+          <div class="card-body">
+            <h2 class="card-title">frutos rojos</h2>
+            <p class="card-text">8000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <p>Sandwiches</p>
+      <div class="Productos">
+        <div class="card">
+          <img src="Sandwiches2.jpg" alt="Sandwiches cubanos" />
+          <div class="card-body">
+            <h2 class="card-title">Sandwiches cubanos</h2>
+            <p class="card-text">8000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="Sandwiches1.jpg" alt="Sandwiches1.jpg" />
+          <div class="card-body">
+            <h2 class="card-title">Sandwiches sencillo</h2>
+            <p class="card-text">5000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>Jugos</p>
+      <div class="Productos">
+        <div class="card">
+          <img src="jugos1.jpg" alt="jugos naturalez" />
+          <div class="card-body">
+            <h2 class="card-title">jugos naturales en leche</h2>
+            <p class="card-text">7000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="jugos2.jpg" alt="jugos naturalez" />
+          <div class="card-body">
+            <h2 class="card-title">jugos naturales en agua</h2>
+            <p class="card-text">6000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>Pinchos</p>
+      <div class="Productos">
+        <div class="card">
+          <img src="pinchos3.jpg" alt="chuzo de pollo" />
+          <div class="card-body">
+            <h2 class="card-title">Pinchos de pollo</h2>
+            <p class="card-text">7000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pinchos2.jpg" alt="chuzos mixtos" />
+          <div class="card-body">
+            <h2 class="card-title">Pinchos mixtos</h2>
+            <p class="card-text">7000</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar" id = "cart-sidebar">
+      <div class="sidebar-content">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="cart-total">0</span></p>
+        <button id="close-cart-btn">Cerrar</button>
+        <script src="carrito_compra.js"></script>
+      </div>
+    </div>
+
+    
+    <script src="open_sidebar.js"></script>
+  </body>
+</html>
